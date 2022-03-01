@@ -1,0 +1,188 @@
+header {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: white;
+
+    box-shadow: 0 0 2px black;
+
+    padding: 1rem 2rem;
+
+}
+
+header .fa-bars {
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2rem;
+
+    border-radius: 5px;
+
+    width: 40px;
+    height: 40px;
+    
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+header .fa-bars:hover {
+
+    background: rgba(0, 0, 0, 0.2);
+    color: #279AF1;
+
+}
+
+header nav ul {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 31vw;
+
+}
+
+header nav ul li {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: black;
+
+    font-family: 'Ubuntu';
+    font-size: 1.2rem;
+
+    width: calc(30vw / 4);
+    
+    padding: 0.5rem 0;
+    
+    cursor: pointer;
+
+    transition: 0.5s;
+
+}
+
+header nav ul li::before {
+
+    content: '';
+
+    position: absolute;
+    
+    margin: 2rem 0 0 0;
+
+    background: #279AF1;
+
+    width: 0;
+    height: 2px;
+
+    transition: 0.2s;
+
+}
+
+header nav ul li:hover::before {
+
+    width: calc(30vw / 4);
+
+}
+
+@media (max-width: 1240px) {
+
+    header nav ul {
+
+        width: 40vw;
+
+    }
+    
+}
+
+@media (max-width: 1080px) {
+
+    header nav ul {
+
+        width: 50vw;
+
+    }
+
+}
+
+@media (max-width: 720px) {
+
+    header .fa-bars {
+
+        display: flex;
+
+    }
+
+    header nav {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: fixed;
+        top: 0;
+        left: -100vw;
+        
+        background: white;
+        
+        width: 100vw;
+        min-height: 100vh;
+        
+        transition: 0.2s;
+
+        z-index: 2;
+
+    }
+
+    header nav.ativo {
+
+        left: 0;
+
+    }
+
+    .fa-bars.ativo {
+
+        z-index: 3;
+
+    }
+
+    header nav ul {
+
+        flex-direction: column;
+
+        width: 100%;
+        min-height: 50vh;
+
+    }
+
+    header nav ul li {
+
+        width: 100vw;
+
+    }
+
+    header nav ul li::before {
+
+        margin-top: 1.5rem;
+
+    }
+
+    header nav ul li:hover::before {
+
+        width: 40vw;
+    
+    }
+    
+}

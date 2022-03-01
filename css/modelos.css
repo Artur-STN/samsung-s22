@@ -1,0 +1,193 @@
+.modelos {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-direction: column;
+
+}
+
+.modelos h1 {
+
+    font-family: 'Ubuntu';
+    font-size: 2rem;
+    font-weight: bolder;
+
+    margin-bottom: 2rem;
+
+}
+
+.modelos .celulares {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.modelos .celulares .celular {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-direction: column;
+    
+    width: calc(90vw / 3);
+    min-height: 80vh;
+
+    padding-bottom: 5rem;
+
+    transition: 0.2s;
+
+}
+
+.modelos .celulares #celular_s22 {
+
+    background: #F8F8F5;
+
+} 
+.modelos .celulares #celular_s22_plus {
+
+    background: #F8F8F5;
+
+}
+.modelos .celulares #celular_s22_ultra {
+
+    background: #825D65;
+
+}
+
+.modelos .celulares .celular img {
+    
+    height: 300px;
+    
+    transition: 0.2s;
+
+}
+
+.modelos .celulares .celular p {
+
+    font-family: 'Ubuntu';
+    font-size: 1.5rem;
+    font-weight: bolder;
+
+    background: white;
+
+    text-align: center;
+
+    width: 90%;
+    
+    padding: 0.5rem 0;
+
+}
+
+.modelos .celulares .celular .buttons {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: calc(70vw / 4);
+
+}
+
+.modelos .celulares .celular .buttons button {
+
+    border: 1px solid black;
+
+    border-radius: 50%;
+    
+    width: 40px;
+    height: 40px;
+
+    transition: 0.2s;
+
+    cursor: pointer;
+
+}
+
+.modelos .celulares .celular .buttons button#botaoCorBranco {
+
+    background: #F8F8F5;
+
+}
+
+.modelos .celulares .celular .buttons button#botaoCorPreto {
+
+    background: #202322;
+
+}
+
+.modelos .celulares .celular .buttons button#botaoCorRosa {
+
+    background: #EDDCD7;
+
+}
+
+.modelos .celulares .celular .buttons button#botaoCorVerde {
+
+    background: #344E4A;
+
+}
+
+.modelos .celulares .celular .buttons button#botaoCorBordo {
+
+    background: #825D65;
+
+}
+
+.modelos .celulares .celular .buttons button:hover {
+
+    box-shadow: 0 0 5px black;
+
+    transform: scale(1.2);
+
+}
+
+@media (max-width: 1100px) {
+
+    .modelos .celulares .celular {
+
+        width: calc(95vw / 3);
+    
+    }
+
+    .modelos .celulares .celular .buttons {
+
+        width: calc(90vw / 4);
+    
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .modelos .celulares {
+
+        flex-direction: column;
+
+    }
+
+    .modelos .celulares .celular {
+
+        width: 90vw;
+
+        border-bottom: 2px solid white;
+
+    }
+        
+    .modelos .celulares .celular img {
+
+        height: 250px;
+
+    }
+
+    .modelos .celulares .celular .buttons {
+
+        width: 40vw;
+
+    }
+    
+}
