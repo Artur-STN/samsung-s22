@@ -8,26 +8,12 @@
     box-sizing: border-box;
 
     scroll-behavior: smooth;
-    scroll-margin-top: 90px;
+    scroll-margin-top: 77.59px;
 
     text-decoration: none;
 
     outline: none;
 
     list-style: none;
-
-}
-
-body main.breve {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    text-transform: uppercase;
-
-    font-size: 2rem;
-    
-    min-height: 100vh;
 
 }

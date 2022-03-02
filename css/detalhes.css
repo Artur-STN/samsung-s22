@@ -1,1 +1,143 @@
-/* EM BREVE */
+.detalhes {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-direction: column;
+
+    padding: 4rem 2rem;
+
+}
+
+.detalhes h1 {
+
+    font-family: 'Ubuntu';
+    font-size: 2rem;
+
+    margin-bottom: 2rem;
+
+}
+
+.detalhes .divDetalhe {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 70%;
+
+}
+
+.detalhes .divDetalhe .detalhe {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-direction: column;
+
+}
+
+.detalhes .divDetalhe .detalhe img {
+
+    height: 250px;
+    
+}
+
+.detalhes .divDetalhe .detalhe .tela,
+.detalhes .divDetalhe .detalhe .cameraFrontal,
+.detalhes .divDetalhe .detalhe .cameraTraseira .cameraUltraWide,
+.detalhes .divDetalhe .detalhe .cameraTraseira .cameraWide,
+.detalhes .divDetalhe .detalhe .cameraTraseira .cameraTeleObjetiva,
+.detalhes .divDetalhe .detalhe .cameraTraseira .spaceZoom,
+.detalhes .divDetalhe .detalhe .bateria,
+.detalhes .divDetalhe .detalhe .armazenamento {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-direction: column;
+
+    border-bottom: 1px solid black;
+    
+    margin-bottom: 1rem;
+
+    width: 250px;
+
+}
+
+.detalhes .divDetalhe .detalhe .tela p,
+.detalhes .divDetalhe .detalhe .cameraFrontal p,
+.detalhes .divDetalhe .detalhe .cameraTraseira .cameraUltraWide p,
+.detalhes .divDetalhe .detalhe .cameraTraseira .cameraWide p,
+.detalhes .divDetalhe .detalhe .cameraTraseira .cameraTeleObjetiva p,
+.detalhes .divDetalhe .detalhe .cameraTraseira .spaceZoom p,
+.detalhes .divDetalhe .detalhe .bateria p,
+.detalhes .divDetalhe .detalhe .armazenamento p {
+
+    font-family: 'Ubuntu';
+    font-size: 1.2rem;
+
+    margin-bottom: 1rem;
+
+}
+
+@media (max-width: 1180px) {
+
+    .detalhes {
+
+        padding: 2rem;
+
+    }
+
+    .detalhes .divDetalhe {
+
+        width: 80%;
+    
+    }
+    
+}
+
+@media (max-width: 1080px) {
+
+    .detalhes {
+
+        padding: 2rem;
+
+    }
+
+    .detalhes .divDetalhe {
+
+        width: 90%;
+    
+    }
+    
+}
+
+@media (max-width: 900px) {
+
+    .detalhes {
+
+        padding: 2rem;
+
+    }
+
+    .detalhes .divDetalhe {
+
+        flex-direction: column;
+        
+        width: 100%;
+    
+    }
+
+    .detalhes .divDetalhe .detalhe {
+
+        width: 100%;
+        
+        border-bottom: 1px solid;
+
+    }
+    
+}

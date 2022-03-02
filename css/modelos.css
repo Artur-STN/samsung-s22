@@ -6,6 +6,10 @@
 
     flex-direction: column;
 
+    border-top: 5px solid #825D65;
+
+    padding: 2rem 0;
+
 }
 
 .modelos h1 {
@@ -33,11 +37,11 @@
     justify-content: space-between;
 
     flex-direction: column;
+
+    border: 1px solid black;
+    border-radius: 10px;
     
     width: calc(90vw / 3);
-    min-height: 80vh;
-
-    padding-bottom: 5rem;
 
     transition: 0.2s;
 
@@ -101,6 +105,8 @@
     
     width: 40px;
     height: 40px;
+
+    margin: 2rem 0;
 
     transition: 0.2s;
 
@@ -172,9 +178,15 @@
 
     .modelos .celulares .celular {
 
-        width: 90vw;
+        width: 80vw;
 
-        border-bottom: 2px solid white;
+        margin-bottom: 2rem;
+
+    }
+
+    .modelos .celulares .celular:nth-child(3) {
+
+        margin-bottom: 0;
 
     }
         
